@@ -16,6 +16,11 @@ def even_list(int_list):
 
 # Skeleton code for sum_of_squares_of_even
 def sum_of_squares_of_even(even_int_list):
+  sum = 0
+  for i in even_int_list:
+    sum += i**2
+  print(sum)
+  return sum
   """
   Computes the sum of the squares of all even numbers in a list of integers.
   
