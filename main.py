@@ -2,6 +2,14 @@ from typing import List
 
 # Skeleton code for even_list
 def even_list(int_list):
+  tmp_list = []
+  for i in int_list:
+    if i%2 == 0:
+      tmp_list.append(i)
+  int_list = []
+  int_list.extend(tmp_list)
+  print(int_list)
+  return int_list
   """
   Determines if a number is even and return an even list.
   
